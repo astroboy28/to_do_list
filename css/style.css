@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(rgba(66, 35, 241, 0.2), rgba(66, 35, 241, 0.7)),
+      url(images/building.jpg) no-repeat center center fixed;
+    overflow: hidden;
+  }
+  
+  /*Landing Page*/
+  #landing-page {
+    margin-top: 100px;
+  }
+  
+  #landing-page h1,
+  #landing-page p {
+    padding-left: 15vw;
+    text-align: left;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px black;
+  }
+  
+  #landing-page p {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  .sign-up,
+  .sign-in,
+  .form li input[type="submit"],
+  .form-signin li input[type="submit"],
+  #dash-form input[type="submit"],
+  button,
+  .edit,
+  #list-form input[type="submit"] {
+    background-color: rgba(66, 35, 241);
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 16vh;
+    text-decoration: none;
+    float: left;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .sign-up {
+    margin-left: 15vw;
+    margin-right: 60px;
+  }
+  
+  .sign-in {
+    margin-left: 60px;
+  }
+  
+  /*Sign-up page*/
+  #signup-page,
+  #signin-page,
+  #dashboard,
+  #edit-account,
+  #edit-list {
+    display: none;
+  }
+  
+  #signin-page h2,
+  #signup-page h2,
+  #dashboard h2,
+  #edit-account h2,
+  #edit-list h2 {
+    font-size: 30px;
+    padding-top: 30px;
+    text-shadow: 2px 2px 4px black;
+  }
+  
+  .signin-form,
+  .signup-form,
+  #dash-form,
+  #list-form {
+    height: auto;
+    width: 400px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    padding: 10px;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  .form li {
+    list-style-type: none;
+    margin: 10px;
+  }
+  
+  .form li input,
+  #dash-form input[type="text"],
+  #list-form input[type="text"] {
+    border: 1px solid white;
+    border-radius: 6px;
+    background: transparent;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  .form li input[type="submit"],
+  .form-signin li input[type="submit"] {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+  }
+  
+  .required-mssg,
+  .confirm-mssg {
+    display: none;
+    float: none;
+    font-size: 12px;
+  }
+  
+  .form li input[type="submit"],
+  .form-signin li input[type="submit"] {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+  
+  /*Sign-in page*/
+  .form-signin li {
+    list-style-type: none;
+    margin: 25px;
+  }
+  
+  .form-signin li input {
+    border: 1px solid white;
+    border-radius: 6px;
+    background: transparent;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  .signin-form {
+    width: 350px;
+  }
+  
+  /*Dashboard*/
+  nav {
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li button {
+    margin: 8px 40px;
+  }
+  
+  #dash-form,
+  #list-form {
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  #dash-form input,
+  #list-form input {
+    display: inline-block;
+  }
+  
+  #dash-form input[type="text"],
+  #list-form input[type="text"] {
+    margin-top: 8px;
+    width: 250px;
+  }
+  
+  #dash-form input[type="submit"],
+  #list-form input[type="submit"] {
+    margin: 0 5px;
+    float: right;
+  }
+  
+  #todo-dash,
+  #todo-list {
+    margin-top: 70px;
+    width: 100vw;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+  }
+  
+  .dash-lists {
+    float: left;
+  }
+  
+  #todo-dash div {
+    cursor: pointer;
+    background-color: #deb3eb;
+    width: 150px;
+    height: 220px;
+    margin: 40px 20px;
+    overflow: hidden;
+  }
+  
+  #todo-dash div p {
+    padding: 25px 5px;
+    font-size: 15px;
+    color: black;
+    text-shadow: none;
+  }
+  
+  /*Edit Account*/
+  .edit {
+    margin: 15px;
+    margin-top: 400px;
+    float: none;
+    display: inline-block;
+  }
+  
+  /*Todo List Page*/
+  #todo-list {
+    width: 450px;
+    height: 300px;
+    background-color: #deb3eb;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+  }
+  
+  .list-class li {
+    color: black;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    padding: 6px 3px 6px 15px;
+    list-style-type: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .list-class li::before,
+  .preview-class::before {
+    content: "\2713";
+  }
+  
+  .checked-item {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .unchecked-item {
+    text-decoration: none;
+    color: rgba(0, 0, 0);
+  }
+  
+  .preview-class {
+    color: black;
+    font-size: 10px;
+    list-style: none;
+  }
+  
+  .delete-list {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 6px 10px 6px 10px;
+  }
+  
+  .delete-list:hover {
+    color: white;
+    background-color: red;
+  }
+  
+  #deleted-item {
+    display: none;
+  }
+  
+  #list-nav {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
